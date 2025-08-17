@@ -1,0 +1,115 @@
+/* CUSTOM GP CSS */
+
+:root {
+    --gp-colour-blue: #155A7D;
+    --gp-colour-pink: #FEAC9B;
+    --gp-colour-black: #2E3032;
+}
+
+/********* HOME PAGE *********/
+
+/* increase header padding on desktop */
+@media (min-width: 600px) {
+    header.sc-46ce87e2-0 {
+        padding: 2rem;
+    }
+}
+
+/* 
+    Remove background on header and make it appear above the hero image.
+    This happens on home page only.
+    Makes use of custom classes set via JS.
+*/
+header.sc-46ce87e2-0.gp-home-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+
+header.sc-46ce87e2-0 a {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+/* mobile menu */
+ul.sc-1384c760-1 a {
+    font-family: 'Noto Sans', sans !important;
+}
+
+ul.sc-1384c760-1 a:hover {
+    text-decoration: underline;
+}
+
+/* Extend hero image and remove rounded corners */
+main.gp-home-page section.sc-7cc293a3-0 {
+    height: 100vh;
+}
+
+main.gp-home-page section.sc-7cc293a3-0::before {
+    border-radius: 0px;
+}
+
+main.gp-home-page section.sc-7cc293a3-0>img {
+    border-radius: 0px;
+}
+
+/* tweak headline and sub-title */
+@media (min-width: 600px) {
+    h1.sc-7cc293a3-2 {
+        width: 40vw;
+        margin-bottom: 6rem;
+        font-size: clamp(3rem, 4vw, 5rem);
+    }
+}
+
+h1.sc-7cc293a3-2,
+p.sc-7cc293a3-3 {
+    /*font-family: 'Libre Baskerville', serif !important;*/
+    font-family: 'Inter', serif !important;
+    font-weight: 400 !important;
+    font-style: normal;
+    line-height: 1.2;
+    text-transform: none;
+    color: var(--gp-colour-pink);
+    margin-bottom: 3rem;
+}
+
+p.sc-7cc293a3-3 {
+    border: 0px;
+    margin-top: 0px;
+    margin-bottom: 8rem;
+}
+
+/* increase gap between rows in Our top Properties list */
+ul.sc-d6968d17-2 {
+    row-gap: 3em;
+}
+
+/********* LISTING PAGES *********/
+
+/* increase space between rows of listings */
+div.sc-826b387a-0 {
+    row-gap: 3em;
+}
+
+/* reduce corner radii on image boxes */
+li.sc-b8d8a7c2-2,
+div.sc-f107f3d0-7,
+div.sc-11ab16d-0 {
+    border-radius: 15px;
+}
+
+/* remove ammenities tags from listings */
+ul.sc-11c4b62-5 {
+    display: none;
+}
+
+/********* 	INQUIRY RECEIVED *********/
+/* reduce gap after headline text */
+p.sc-7cc293a3-3 {
+    margin-bottom: 0;
+}
