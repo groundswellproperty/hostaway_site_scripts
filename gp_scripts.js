@@ -1,10 +1,10 @@
 // GPUtils
 export { };
 
-const haPageHeaderClass = ".sc-46ce87e2-0";
+const HostawayPageHeaderClass = ".sc-46ce87e2-0";
 
 function updateElementClass() {
-    const el = document.querySelector(haHeaderClass);
+    const el = document.querySelector(HostawayPageHeaderClass);
     if (!el) return;
 
     if (window.location.pathname === '/') {
