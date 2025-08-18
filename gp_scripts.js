@@ -2,7 +2,7 @@
 export { };
 
 const HostawayPageHeaderClass = ".sc-46ce87e2-0";
-const SiteHeader = document.getElementById(HostawayPageHeaderClass);
+const SiteHeader = document.querySelector(HostawayPageHeaderClass);
 
 function updateElementClass() {
     if (!SiteHeader) return;
