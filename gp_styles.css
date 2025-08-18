@@ -22,7 +22,7 @@
     This happens on home page only.
     Makes use of custom classes set via JS.
 */
-header.sc-46ce87e2-0.gp-home-page {
+header.sc-46ce87e2-0 {
     position: fixed;
     top: 0;
     left: 0;
