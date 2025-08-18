@@ -1,6 +1,9 @@
-const haHeaderClass = ".sc-46ce87e2-0";
+// GPUtils
+export { };
 
-function gpUpdateElementClass() {
+const haPageHeaderClass = ".sc-46ce87e2-0";
+
+function updateElementClass() {
     const el = document.querySelector(haHeaderClass);
     if (!el) return;
 
@@ -12,8 +15,8 @@ function gpUpdateElementClass() {
 }
 
 // run immediately
-gpUpdateElementClass();
+updateElementClass();
 
 // watch for DOM changes
-const observer = new MutationObserver(() => gpUpdateElementClass());
-observer.observe(document.body, { childList: true, subtree: true });
+const observer = new MutationObserver(() => updateElementClass());
+observer.observe(document.body, {childList: true, subtree: true});
