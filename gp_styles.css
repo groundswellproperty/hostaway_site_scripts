@@ -77,8 +77,8 @@ main.gp-home-page section.sc-7cc293a3-0>img {
 
 h1.sc-7cc293a3-2,
 p.sc-7cc293a3-3 {
-    /*font-family: 'Libre Baskerville', serif !important;*/
-    font-family: 'Inter', serif !important;
+    font-family: 'Libre Baskerville', serif !important;
+    /* font-family: 'Inter', serif !important; */
     font-weight: 400 !important;
     font-style: normal;
     line-height: 1.2;
