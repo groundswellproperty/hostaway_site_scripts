@@ -33,7 +33,7 @@ window.addEventListener('scroll', () => {
   if (currentScrollY > scrollThreshold) {
     if (currentScrollY > lastScrollY) {
       // scrolling down past threshold
-      SiteHeader.style.top = '-60px';
+      SiteHeader.style.top = '-100px';
     } else {
       // scrolling up past threshold
       SiteHeader.style.top = '0';
