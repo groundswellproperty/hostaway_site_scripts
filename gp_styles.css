@@ -30,6 +30,8 @@ header.sc-46ce87e2-0.gp-home-page {
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
+    transition: top 0.3s;
+    z-index: 1000;
 }
 
 header.sc-46ce87e2-0 a {
